@@ -14,7 +14,7 @@ module.exports = async () => {
   const demoOldDate = new Date(OLD_DATE)
 
   try {
-    cron.schedule('* * * * * *', async () => {
+    cron.schedule('* * * * *', async () => {
       const doc = await Robot.findOne({}, {}, { sort: { _id: -1 } }).lean()
       const { updatedAt = demoOldDate } = doc || {}
 

@@ -3,6 +3,8 @@ const express = require('express')
 
 const app = express()
 
+const scheduler = require('./src/jobs/scheduler')
+
 app.use(express.json())
 
 app.use((req, res, next) => {
@@ -16,5 +18,11 @@ app.use((req, res, next) => {
 })
 
 app.use('/api', require('./src/api'))
+
+const bootstrap = async () => {
+  await scheduler()
+}
+
+bootstrap()
 
 app.listen(3000, () => console.log('server listening on port 3000'))
