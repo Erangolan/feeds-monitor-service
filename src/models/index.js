@@ -1,5 +1,7 @@
-const Example = require('./Example')
+const Robot = require('./Robot')
+const State = require('./State')
 
 module.exports = {
-  Example,
+  Robot,
+  State,
 }
