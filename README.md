@@ -7,8 +7,8 @@ loggs warning message.
 
 Additionally, we have 2 routes: <br />
 
-/state - This route shows the last log of the system(Warning message or Back to normal). <br />
-/info - This route shows the last timestamp a feed file was received for each robot in our DB.
+/"state" - This route shows the last log of the system(Warning message or Back to normal). <br />
+/"info" - This route shows the last timestamp a feed file was received for each robot in our DB.
 
 ## Configuration
 
