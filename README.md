@@ -4,8 +4,10 @@ When file accepted in /upload-file route, the name of the file is saved in DB.
 We have a cron-job running every second, checking if files recieved
 in the last minute, if so, it loggs that we are in normal state, otherwise it
 loggs warning message.
+
 Additionally, we have 2 routes:
 /state - This route shows the last log of the system(Warning message or Back to normal).
+
 /info - This route shows the last timestamp a feed file was received for each robot in our DB.
 
 ## Configuration
